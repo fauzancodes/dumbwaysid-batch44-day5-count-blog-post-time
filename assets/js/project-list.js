@@ -51,9 +51,7 @@ function addProject(e) {
             else {
               duration = Math.floor((endDate - startDate)/ (1000));
               if (duration > 0) duration = `${duration} second${duration > 1 ? "s" : ""}`;
-              else {
-                duration = "just now";
-              }
+              else duration = "just now";
             }
           }
         }
