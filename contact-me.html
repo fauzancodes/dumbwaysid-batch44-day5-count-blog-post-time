@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauzan | Personal Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/contact-me.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/"><img src="/assets/images/logo.png"/></a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/project-list.html">My Project</a></li>
+      </ul>
+      <a href="/contact-me.html" id="contact-me-button">Contact Me</a>
+    </nav>
+    <div id="form-container">
+      <h1>GET IN TOUCH</h1>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Jarl Balgruuf the Greater"/>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="balgruuf@gmail.com"/>
+        </div>
+        <div>
+          <label for="phone-number">Phone Number</label>
+          <input type="text" id="phone-number" placeholder="+1234567890"/>
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option>Discussion</option>
+            <option>Recruitment</option>
+            <option>Consultation</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Your Message</label>
+          <textarea id="message" placeholder="I would like to discuss the expansion of Whiterun's territory."></textarea>
+        </div>
+        <div id="submit-button-container">
+          <button type="button" id="submit-button" onclick="sendMessage()">submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="/assets/js/contact-me.js"></script>
+  </body>
+</html>

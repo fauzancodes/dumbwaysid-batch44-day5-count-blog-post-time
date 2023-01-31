@@ -1,0 +1,119 @@
+#container {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(29,29,29,0.25);
+  padding: 50px;
+}
+#left-container {
+  width: 60%;
+}
+#left-container h1 {
+  font-weight: 800;
+  margin-top: 0;
+}
+#left-container p {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+#action-button-container a {
+  text-decoration: none;
+}
+#contact-button {
+  margin-right: 20px;
+}
+#contact-button button {
+  border: none;
+  background: #001736;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#contact-button button:hover {
+  background: #006bff;
+}
+#download-cv-button button {
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #001736;
+  border-radius: 20px;
+  font-size: 16px;
+}
+#download-cv-button:hover button {
+  color: #006bff;
+}
+#download-cv-button button i {
+  margin-left: 5px;
+  color: #001736;
+}
+#download-cv-button:hover button i {
+  color: #006bff;
+}
+#social-media-container {
+  margin: 40px 0 0 0;
+}
+#social-media-container a {
+  text-decoration: none;
+}
+#social-media-container a button {
+  font-size: 30px;
+  background: #001736;
+  border: none;
+  color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+#social-media-container a button:hover {
+  background: #006bff;
+}
+#social-media-container a button i {
+  color: #ffffff;
+}
+#profile-card {
+  width: 35%;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(29,29,29,0.25);
+}
+#profile-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+#profile-card div {
+  padding: 20px 0;
+}
+#profile-card div h2 {
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+#profile-card div p {
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  #container {
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+  }
+  #left-container {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  #profile-card {
+    width: 90%;
+  }
+  #social-media-container button {
+    margin-top: 10px;
+  }
+}

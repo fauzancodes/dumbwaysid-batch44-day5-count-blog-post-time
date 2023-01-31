@@ -1,0 +1,172 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauzan | Personal Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/project-list.css">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/"><img src="/assets/images/logo.png"/></a></li>
+        <li><a href="/">Home</a></li>
+        <li class="active"><a href="/project-list.html">My Project</a></li>
+      </ul>
+      <a href="/contact-me.html" id="contact-me-button">Contact Me</a>
+    </nav>
+    <div id="form-container">
+      <h1>ADD MY PROJECT</h1>
+      <form onsubmit="addProject(event)">
+        <div>
+          <label for="project-name">Project Name</label>
+          <input type="text" id="project-name" placeholder="Official Website of Whiterun, Skyrim"/>
+        </div>
+        <div id="project-date-container">
+          <div>
+            <label for="start-date">Start Date</label>
+            <input type="date" id="start-date"/>
+          </div>
+          <div>
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date"/>
+          </div>
+        </div>
+        <div>
+          <label for="description">Description</label>
+          <textarea id="description" placeholder="An official website made to explain about the Whiterun region in Skyrim."></textarea>
+        </div>
+        <div id="technologies-container">
+          <label>Technologies</label>
+          <div>
+            <div>
+              <div>
+                <input id="technology-1" value="fa-node" type="checkbox">
+                <label>Node.JS</label>
+              </div>
+              <div>
+                <input id="technology-2" value="fa-react" type="checkbox">
+                <label>React</label>
+              </div>
+            </div>
+            <div>
+              <div>
+                <input id="technology-3" value="fa-js" type="checkbox">
+                <label>Javascript</label>
+              </div>
+              <div>
+                <input id="technology-4" value="fa-python" type="checkbox">
+                <label>Python</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="upload-image-container">
+          <label>Upload Image</label>
+          <label for="upload-image">
+            <span>choose</span>
+            <input type="file" id="upload-image"/>
+            <i class="fa-solid fa-paperclip fa-lg"></i>
+          </label>
+        </div>
+        <div id="submit-button-container">
+          <button id="submit-button">submit</button>
+        </div>
+      </form>
+    </div>
+    <div id="project-list">
+      <h1>MY PROJECT</h1>
+      <div>
+        <div id="projects-container">
+          <div id="project-container">
+            <img src="/assets/images/mobile-app-1.jpg"/>
+            <a href="/projects/dumbways-mobile-app-1.html" target="_blank"><h3>Dumbways Mobile App - 2021</h2></a>
+            <div>duration: 3 months</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+            <div>
+              <i class="fa-brands fa-node fa-3x"></i>
+              <i class="fa-brands fa-react fa-3x"></i>
+              <i class="fa-brands fa-js fa-3x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div id="project-container">
+            <img src="/assets/images/mobile-app-2.jpg"/>
+            <a href="/projects/dumbways-mobile-app-2.html" target="_blank"><h3>Dumbways Mobile App - 2021</h2></a>
+            <div>duration: 3 months</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+            <div>
+              <i class="fa-brands fa-node fa-3x"></i>
+              <i class="fa-brands fa-react fa-3x"></i>
+              <i class="fa-brands fa-python fa-3x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div id="project-container">
+            <img src="/assets/images/mobile-app-3.jpg"/>
+            <a href="/projects/dumbways-mobile-app-3.html" target="_blank"><h3>Dumbways Mobile App - 2021</h2></a>
+            <div>duration: 3 months</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+            <div>
+              <i class="fa-brands fa-node fa-3x"></i>
+              <i class="fa-brands fa-react fa-3x"></i>
+              <i class="fa-brands fa-js fa-3x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div id="project-container">
+            <img src="/assets/images/mobile-app-4.jpg"/>
+            <a href="/projects/dumbways-mobile-app-4.html" target="_blank"><h3>Dumbways Mobile App - 2021</h3></a>
+            <div>duration: 3 months</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+            <div>
+              <i class="fa-brands fa-node fa-3x"></i>
+              <i class="fa-brands fa-react fa-3x"></i>
+              <i class="fa-brands fa-python fa-3x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+          <div id="project-container">
+            <img src="/assets/images/web-app-1.jpg"/>
+            <a href="/projects/dumbways-web-app.html" target="_blank"><h3>Dumbways Web App - 2021</h3></a>
+            <div>duration: 3 months</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+            <div>
+              <i class="fa-brands fa-node fa-3x"></i>
+              <i class="fa-brands fa-react fa-3x"></i>
+              <i class="fa-brands fa-python fa-3x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/project-list.js"></script>
+  </body>
+</html>
