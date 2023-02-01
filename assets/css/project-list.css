@@ -118,6 +118,7 @@ textarea {
   padding: 20px;
   border-radius: 10px;
   margin: 15px;
+  overflow: hidden;
 }
 #project-container img {
   width: 100%;
@@ -141,6 +142,11 @@ textarea {
 #project-container p {
   margin-top: 30px;
   margin-bottom: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  white-space: pre-wrap;
 }
 #project-container > div:nth-child(5) {
   margin-bottom: 40px;

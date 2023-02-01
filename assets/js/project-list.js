@@ -51,7 +51,7 @@ function addProject(e) {
             else {
               duration = Math.floor((endDate - startDate)/ (1000));
               if (duration > 0) duration = `${duration} second${duration > 1 ? "s" : ""}`;
-              else duration = "just now";
+              else duration = "less than a day";
             }
           }
         }
@@ -82,9 +82,7 @@ function renderProject() {
       <img src="${project.uploadImage}"/>
       <a href="/projects/dumbways-web-app.html"><h3>${project.projectName}</h2></a>
       <div>duration: ${project.duration}</div>
-      <p>
-        ${project.description}
-      </p>
+      <p>${project.description}</p>
       <div>
         ${project.technology1 != false ? project.technology1 : ""}
         ${project.technology2 != false ? project.technology2 : ""}
