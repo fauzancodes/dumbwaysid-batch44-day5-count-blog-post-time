@@ -78,7 +78,7 @@ function renderProject() {
   document.getElementById("projects-container").innerHTML = "";
   for (let project of projectsData) {
     document.getElementById("projects-container").innerHTML += `
-    <div id="project-container">
+    <div class="project-container">
       <img src="${project.uploadImage}"/>
       <a href="/projects/dumbways-web-app.html"><h3>${project.projectName}</h2></a>
       <div>duration: ${project.duration}</div>
