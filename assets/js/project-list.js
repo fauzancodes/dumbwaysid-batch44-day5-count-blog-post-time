@@ -43,17 +43,7 @@ function addProject(e) {
         duration = Math.floor((endDate - startDate)/ (24*60*60*1000));
         if (duration > 0) duration = `${duration} day${duration > 1 ? "s" : ""}`;
         else {
-          duration = Math.floor((endDate - startDate)/ (60*60*1000));
-          if (duration > 0) duration = `${duration} hour${duration > 1 ? "s" : ""}`;
-          else {
-            duration = Math.floor((endDate - startDate)/ (60*1000));
-            if (duration > 0) duration = `${duration} minute${duration > 1 ? "s" : ""}`;
-            else {
-              duration = Math.floor((endDate - startDate)/ (1000));
-              if (duration > 0) duration = `${duration} second${duration > 1 ? "s" : ""}`;
-              else duration = "less than a day";
-            }
-          }
+          duration = "less than a day";
         }
       }
     }
